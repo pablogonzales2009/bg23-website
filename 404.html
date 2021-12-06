@@ -12,9 +12,25 @@
     body {background-color:#FF00FF}
     p, a, input {font-family:arial,sans-serif;font-size:18px;}
 
+    html {
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+        background: #FF0000;
+    }
+
     .dark-mode {
         background-color: #171717;
         color: white;
+
   </style> 
  
 
